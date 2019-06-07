@@ -20,7 +20,7 @@ Use `UIAlertControllerStyle` to indicate the type of alert to display. These ale
 - **UIAlertControllerStyleActionSheet**
 	* Pre-iOS 8 this would have been a UIActionSheet
 - **UIAlertControllerStyleAlert**
-	* Pre-iOS 8 this would have been UIAlertView 
+	* Pre-iOS 8 this would have been UIAlertView
 
 There are three necessary steps to take when creating an Alert Controller:
 
@@ -28,7 +28,7 @@ There are three necessary steps to take when creating an Alert Controller:
 	* title
 	* message
 	* preferredStyle
-	
+
 - (Optional) Add a text field
 - Add the Required actions
 - Present the View Controller
@@ -106,5 +106,5 @@ actionSheetButton.TouchUpInside += ((sender, e) => {
 
 ## Related Links
 
-- [Controls (sample)](https://developer.xamarin.com/samples/Controls/)
+- [Controls (sample)](https://developer.xamarin.com/samples/monotouch/Controls/)
 - [Alert Controller](https://github.com/xamarin/recipes/tree/master/Recipes/ios/standard_controls/alertcontroller)

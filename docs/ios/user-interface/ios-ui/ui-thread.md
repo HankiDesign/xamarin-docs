@@ -79,7 +79,7 @@ async partial void button2_TouchUpInside (UIButton sender)
     await Task.Delay(2000);
     label1.Text = "2 more seconds passed";
     await Task.Delay(1000);
-    new UIAlertView("Async method complete", "This method", 
+    new UIAlertView("Async method complete", "This method",
                null, "Cancel", null)
         .Show();
     label1.Text = "async method completed";
@@ -91,5 +91,5 @@ If an async method is called from a background thread (not the main UI thread) t
 
 ## Related Links
 
-- [Controls (sample)](https://developer.xamarin.com/samples/Controls/)
+- [Controls (sample)](https://developer.xamarin.com/samples/monotouch/Controls/)
 - [Threading](~/ios/app-fundamentals/threading.md)

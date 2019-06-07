@@ -28,7 +28,7 @@ shouldn't be added as children of the controls described below.
 ### WatchViewStub
 
 See the
-[WatchViewStub](https://developer.xamarin.com/samples/WatchViewStub/) sample to see how to detect
+[WatchViewStub](https://developer.xamarin.com/samples/monodroid/wear/WatchViewStub/) sample to see how to detect
 screen type and display a different layout for each type.
 
 The main layout file contains a
@@ -72,7 +72,7 @@ screens:
 
 The design surface in rectangular style is shown here:
 
-![Design surface in rectangular style](screen-sizes-images/design-rect.png) 
+![Design surface in rectangular style](screen-sizes-images/design-rect.png)
 
 The design surface in round style is shown here:
 
@@ -89,7 +89,7 @@ your app.
 
 The emulator will render like this for a rectangular screen:
 
-![Emulator rendering of a rectangular screen](screen-sizes-images/recipe-2.png) 
+![Emulator rendering of a rectangular screen](screen-sizes-images/recipe-2.png)
 
 It will render like this for a round screen:
 
@@ -99,4 +99,3 @@ It will render like this for a round screen:
 
 [Fullscreen apps for Android Wear](https://www.youtube.com/watch?v=naf_WbtFAlY) from
 [developers.google.com](https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw).
-

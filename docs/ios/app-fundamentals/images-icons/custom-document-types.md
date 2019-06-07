@@ -18,7 +18,7 @@ If a Xamarin.iOS app supports loading a particular document type, the developer 
  [![](custom-document-types-images/17.png "An example of document type icons")](custom-document-types-images/17.png#lightbox)
 
 The developer can add document type information for a file format the app is capable of opening by including dictionary entries for the `CFBundleTypeName` string and `LSItemContentTypes` array in the app's `Info.plist`. The icons for the document type go in the `CFBundleTypeIconFiles` array. If a document icon isn't provided, iOS will derive one from the app icon.
-Icons can be supplied for several sizes, optimized for the various device resolutions. 
+Icons can be supplied for several sizes, optimized for the various device resolutions.
 
 # [Visual Studio for Mac](#tab/macos)
 
@@ -27,7 +27,7 @@ editor to add the document type and assign image icons to it. For
 example, here is a screenshot showing registration for PDF support:
 
  [![](custom-document-types-images/18.png "The Document Types section under the Advanced tab on the `Info.plist` editor")](custom-document-types-images/18.png#lightbox)
- 
+
 # [Visual Studio](#tab/windows)
 
 To assign these values in Visual Studio, use the **Document Types** section under the **Advanced** tab on the `Info.plist`:
@@ -46,6 +46,6 @@ For more information about document types, see Apple’s [Uniform Type Identifie
 
 ## Related Links
 
-- [Working with Images (sample)](https://developer.xamarin.com/samples/WorkingWithImages/)
+- [Working with Images (sample)](https://developer.xamarin.com/samples/monotouch/WorkingWithImages/)
 - [Hello, iPhone](~/ios/get-started/hello-ios/index.md)
 - [Custom Icon and Image Creation Guidelines](https://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/IconsImages/IconsImages.html)

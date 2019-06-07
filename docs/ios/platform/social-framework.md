@@ -63,7 +63,7 @@ if (SLComposeViewController.IsAvailable (SLServiceKind.Twitter)) {
  `SLComposeViewController` never sends a tweet directly without
 user interaction. However, it can be initialized with the following methods:
 
--   `SetInitialText` – Adds the initial text to show in the tweet. 
+-   `SetInitialText` – Adds the initial text to show in the tweet.
 -  `AddUrl` – Adds a Url to the tweet.
 -  `AddImage` – Adds an image to the tweet.
 
@@ -114,7 +114,7 @@ namespace SocialFrameworkDemo
 		#region Constructors
 		protected ViewController (IntPtr handle) : base (handle)
 		{
-			
+
 		}
 		#endregion
 
@@ -180,7 +180,7 @@ public override void ViewWillAppear (bool animated)
 	SendTweet.Enabled = isTwitterAvailable;
 	RequestTwitterTimeline.Enabled = false;
 
-	// Initialize Twitter Account access 
+	// Initialize Twitter Account access
 	var accountStore = new ACAccountStore ();
 	var accountType = accountStore.FindAccountType (ACAccountType.Twitter);
 
@@ -351,7 +351,7 @@ namespace SocialFrameworkDemo
 		#region Constructors
 		protected ViewController (IntPtr handle) : base (handle)
 		{
-			
+
 		}
 		#endregion
 
@@ -420,7 +420,7 @@ public override void ViewWillAppear (bool animated)
 	PostToFacebook.Enabled = isFacebookAvailable;
 	RequestFacebookTimeline.Enabled = false;
 
-	// Initialize Facebook Account access 
+	// Initialize Facebook Account access
 	var accountStore = new ACAccountStore ();
 	var options = new AccountStoreOptions ();
 	var options.FacebookAppId = ""; // Enter your specific Facebook App ID here
@@ -504,5 +504,5 @@ is used to call each social network’s API.
 
 ## Related Links
 
-- [SocialFrameworkDemo (sample)](https://developer.xamarin.com/samples/SocialFrameworkDemo/)
+- [SocialFrameworkDemo (sample)](https://developer.xamarin.com/samples/monotouch/SocialFrameworkDemo/)
 - [Introduction to Web Services](~/cross-platform/data-cloud/web-services/index.md)

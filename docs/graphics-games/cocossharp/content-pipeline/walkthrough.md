@@ -135,7 +135,7 @@ The .spritefont file is actually an XML file which can be edited in any text edi
 
     <!-- Size is a float value, measured in points. 
     Modify this value to change the size of the font. -->
-    <Size>12</Size> 
+    <Size>12</Size>
 ```
 
 We’ll open the file in any text editor. As our **arial-36.spritefont** name suggests, we’ll leave the `FontName` as `Arial` but change the `Size` value to `36`:
@@ -146,10 +146,10 @@ We’ll open the file in any text editor. As our **arial-36.spritefont** name su
     <FontName>Arial</FontName>   
   
     <!-- Size is a float value, measured in points. 
-    Modify this value to change the size of the font. -->4/10/2016 12:57:28 PM 
+    Modify this value to change the size of the font. -->4/10/2016 12:57:28 PM
     <Size>36</Size>
 ```
- 
+
 ## Using files at runtime
 
 The .xnb files are now built and ready to be used in our project. We’ll be adding the files to Visual Studio for Mac then we’ll add code to our `GameScene.cs` file to load these files and display them.
@@ -205,7 +205,7 @@ namespace BouncingGame
             mainLayer.AddChild (label);
         }
     }
-} 
+}
 ```
 
 We won’t be discussing the code above since working with CocosSharp visual objects like CCSprite and CCLabelTtf is covered in the [BouncingGame guide](~/graphics-games/cocossharp/bouncing-game.md).
@@ -222,7 +222,7 @@ public override void ApplicationDidFinishLaunching (CCApplication applicati
     // New code:
     GameScene gameScene = new GameScene (mainWindow);
     mainWindow.RunWithScene (gameScene);
-} 
+}
 ```
 
 When running, our game will look like:
@@ -238,5 +238,5 @@ This walkthrough showed how to use the MonoGame Pipeline Tool to create .xnb fil
 
 - [MonoGame Downloads](http://www.monogame.net/downloads/)
 - [MonoGame Pipeline Documentation](http://www.monogame.net/documentation/?page=Pipeline)
-- [Starting BouncingGame Project for Android (sample)](https://developer.xamarin.com/samples/BouncingGameCompleteAndroid/)
+- [Starting BouncingGame Project for Android (sample)](https://developer.xamarin.com/samples/monodroid/BouncingGameCompleteAndroid/)
 - [ball.png Graphic (sample)](https://github.com/xamarin/mobile-samples/blob/master/BouncingGame/Resources/ball.png?raw=true)

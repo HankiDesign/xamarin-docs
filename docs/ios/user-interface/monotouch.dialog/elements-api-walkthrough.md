@@ -44,9 +44,9 @@ To create a multi-screen application with MonoTouch.Dialog, we need to:
 
 1.  Create a `UINavigationController.`
 1.  Create a `DialogViewController.`
-1.  Add the `DialogViewController` as the root of the  `UINavigationController.` 
+1.  Add the `DialogViewController` as the root of the  `UINavigationController.`
 1.  Add a `RootElement` to the  `DialogViewController.`
-1.  Add `Sections` and  `Elements` to the  `RootElement.` 
+1.  Add `Sections` and  `Elements` to the  `RootElement.`
 
 ### Using A UINavigationController
 
@@ -55,11 +55,11 @@ the `AppDelegate`. To make the `UINavigationController`
 work with MonoTouch.Dialog, we add a `DialogViewController` to the `UINavigationController` as shown below:
 
 ```csharp
-public override bool FinishedLaunching (UIApplication app, 
+public override bool FinishedLaunching (UIApplication app,
         NSDictionary options)
 {
         _window = new UIWindow (UIScreen.MainScreen.Bounds);
-            
+
         _rootElement = new RootElement ("To Do List"){new Section ()};
 
         // code to create screens with MT.D will go here …
@@ -68,7 +68,7 @@ public override bool FinishedLaunching (UIApplication app,
         _nav = new UINavigationController (_rootVC);
         _window.RootViewController = _nav;
         _window.MakeKeyAndVisible ();
-            
+
         return true;
 }
 ```
@@ -109,14 +109,14 @@ to accomplish this in the event handler for the button:
 
 ```csharp
 _addButton.Clicked += (sender, e) => {
-                
+
         ++n;
-                
+
         var task = new Task{Name = "task " + n, DueDate = DateTime.Now};
-                
+
         var taskElement = new RootElement (task.Name){
                 new Section () {
-                        new EntryElement (task.Name, 
+                        new EntryElement (task.Name,
                                 "Enter task description", task.Description)
                 },
                 new Section () {
@@ -137,9 +137,9 @@ public class Task
         public Task ()
         {
         }
-        
+
         public string Name { get; set; }
-        
+
         public string Description { get; set; }
 
         public DateTime DueDate { get; set; }
@@ -182,9 +182,7 @@ screens. In addition, it showed how to use MT.D in conjunction with a `UINavigat
 
 ## Related links
 
-- [MTDWalkthrough (sample)](https://developer.xamarin.com/samples/MTDWalkthrough/)
-- [Screencast - Miguel de Icaza creates an iOS login screen with MonoTouch.Dialog](http://youtu.be/3butqB1EG0c)
-- [Screencast - Easily create iOS user interfaces with MonoTouch.Dialog](http://youtu.be/j7OC5r8ZkYg)
+- [MTDWalkthrough (sample)](https://developer.xamarin.com/samples/monotouch/MTDWalkthrough/)
 - [Introduction to MonoTouch.Dialog](~/ios/user-interface/monotouch.dialog/index.md)
 - [Reflection API Walkthrough](~/ios/user-interface/monotouch.dialog/reflection-api-walkthrough.md)
 - [JSON Element Walkthrough](~/ios/user-interface/monotouch.dialog/json-element-walkthrough.md)

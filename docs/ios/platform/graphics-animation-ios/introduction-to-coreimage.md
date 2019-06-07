@@ -56,7 +56,7 @@ face. `CIFaceFeature` has the following properties:
 
 -  HasMouthPosition – Whether a mouth was detected for this face.
 -  HasLeftEyePosition – Whether the left eye was detected for this face.
--  HasRightEyePosition – Whether the right eye was detected for this face. 
+-  HasRightEyePosition – Whether the right eye was detected for this face.
 -  MouthPosition – The coordinates of the mouth for this face.
 -  LeftEyePosition – The coordinates of the left eye for this face.
 -  RightEyePosition – The coordinates of the right eye for this face.
@@ -242,7 +242,7 @@ scroll through the list to see all the filters and their parameters.
 
 Each filter listed has been exposed as a class in Xamarin.iOS, so you can also
 explore the Xamarin.iOS.CoreImage API in the Assembly Browser or using
-auto-complete in either Visual Studio for Mac or Visual Studio. 
+auto-complete in either Visual Studio for Mac or Visual Studio.
 
 ## Summary
 
@@ -252,7 +252,7 @@ of different image filters available in the framework for you to use.
 
 ## Related Links
 
-- [Core Image (sample)](https://developer.xamarin.com/samples/CoreImage/)
+- [Core Image (sample)](https://developer.xamarin.com/samples/monotouch/CoreImage/)
 - [Adjust Contract and Brightness of an Image Recipe](https://github.com/xamarin/recipes/tree/master/Recipes/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image)
 - [Using Core Image Filters](https://developer.apple.com/library/prerelease/ios/#documentation/GraphicsImaging/Conceptual/CoreImaging/ci_tasks/ci_tasks.html)
 - [CIFilter Class Reference](https://developer.apple.com/library/prerelease/ios/#documentation/GraphicsImaging/Reference/QuartzCoreFramework/Classes/CIFilter_Class/Reference/Reference.htm)
